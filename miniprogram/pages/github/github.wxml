@@ -1,0 +1,7 @@
+
+<view class="move">
+<image class="pic" src="../../images/4.jpg" mode='aspectFit'></image>
+<text>本项目github</text>
+<text>123</text>
+</view>
+<button class="copy" bindtap="copy">复制</button>

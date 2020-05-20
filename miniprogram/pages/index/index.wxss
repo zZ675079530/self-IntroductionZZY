@@ -1,0 +1,232 @@
+page {
+    background: #f3f3f3;
+    width: 100vw;
+    overflow: hidden;
+}
+.myWindow{
+  position: absolute;
+  top: 10vh;
+}
+.mygrid{
+  margin: 60rpx 20rpx 100rpx;
+}
+.copy{
+  display: inline-block;
+  width: 100rpx;
+  right: 50rpx;
+  font-size: 20rpx;
+  padding: 0;
+  position: absolute;
+
+}
+.center_bg {
+    width: 100%;
+    position: absolute;
+    height: 55vh;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.avatar-warp {
+    height:40vh; 
+    margin: 20vh 10vw 0;
+    background: rgba(255, 255, 255, 0.99);
+    border-radius: 20rpx;
+    box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 2;
+}
+
+.avatar-warp .avatar {
+    display: block;
+    width: 160rpx;
+    height: 160rpx;
+    border-radius: 50%;
+    border: 4rpx solid #fff;
+    margin: 0 auto;
+    position: relative;
+    top: -80rpx;
+    box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.4);
+    margin-bottom: -80rpx;
+}
+
+.nickname {
+    text-align: center;
+    font-size: 46rpx;
+    font-weight: bold;
+    padding: 20rpx 0 10rpx;
+}
+
+.user-info {
+    text-align: center;
+    font-size: 40rpx;
+    line-height: 40rpx;
+    color: #999;
+}
+
+.user-info image {
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: top;
+    margin-right: 8rpx;
+}
+
+.article-info {
+    margin: 10vh auto 0;
+    overflow: hidden;
+}
+
+.article-item {
+    width: 33%;
+    float: left;
+    text-align: center;
+    font-size: 28rpx;
+    color: #666;
+    border-right: 1px solid #ededed;
+}
+
+.article-info .article-item:last-child {
+    border-right: none;
+}
+
+.article-item .num {
+    font-size: 46rpx;
+    display: block;
+    padding-bottom: 8rpx;
+    color: #222;
+    font-weight: bold;
+}
+
+/*菜单*/
+
+.menu-warp {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20rpx;
+    box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
+    margin: 20rpx 30rpx;
+    font-size: 32rpx;
+    line-height: 40rpx;
+    padding: 30rpx 40rpx;
+    position: relative;
+}
+
+.menu-warp .icon {
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: top;
+    margin-right: 10rpx;
+}
+
+.menu-warp .next {
+    display: inline-block;
+    width: 40rpx;
+    height: 40rpx;
+    vertical-align: top;
+    position: absolute;
+    right: 40rpx;
+    top: 30rpx;
+}
+
+ 
+	.DrawerPage {
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		left: 0vw;
+		background-color: #f1f1f1;
+		transition: all 0.4s;
+	}
+ 
+	.DrawerPage.show {
+		transform: scale(0.9, 0.9);
+		left: 85vw;
+		box-shadow: 0 0 60upx rgba(0, 0, 0, 0.2);
+		transform-origin: 0;
+	}
+ 
+	.DrawerWindow {
+		position: absolute;
+		width: 85vw;
+		height: 100vh;
+		left: 0;
+		top: 0;
+		transform: scale(0.9, 0.9) translateX(-100%);
+		opacity: 0;
+		pointer-events: none;
+		transition: all 0.4s;
+		padding: 100upx 0;
+	}
+ 
+	.DrawerWindow.show {
+		transform: scale(1, 1) translateX(0%);
+		opacity: 1;
+		pointer-events: all;
+	}
+ 
+	.DrawerClose {
+		position: absolute;
+		width: 40vw;
+		height: 100vh;
+		right: 0;
+		top: 0;
+		color: transparent;
+		padding-bottom: 30upx;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.6));
+		letter-spacing: 5px;
+		font-size: 50upx;
+		opacity: 0;
+		pointer-events: none;
+		transition: all 0.4s;
+	}
+ 
+	.DrawerClose.show {
+		opacity: 1;
+		pointer-events: all;
+		width: 15vw;
+		color: #fff;
+	}
+ 
+	.DrawerPage .cu-bar.tabbar .action button.cuIcon {
+		width: 64upx;
+		height: 64upx;
+		line-height: 64upx;
+		margin: 0;
+		display: inline-block;
+	}
+ 
+	.DrawerPage .cu-bar.tabbar .action .cu-avatar {
+		margin: 0;
+	}
+ 
+	.DrawerPage .nav {
+		flex: 1;
+	}
+ 
+	.DrawerPage .nav .cu-item.cur {
+		border-bottom: 0;
+		position: relative;
+	}
+ 
+	.DrawerPage .nav .cu-item.cur::after {
+		content: "";
+		width: 10upx;
+		height: 10upx;
+		background-color: currentColor;
+		position: absolute;
+		bottom: 10upx;
+		border-radius: 10upx;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+ 
+	.DrawerPage .cu-bar.tabbar .action {
+		flex: initial;
+	}

@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/favorite/favorite",
+    "pages/github/github"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "I am 171612149老张",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#929292",
+    "selectedColor": "#00afb4",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/nav/my-off.png",
+        "selectedIconPath": "images/nav/my-on.png",
+        "text": "我"
+      },
+      {
+        "pagePath": "pages/favorite/favorite",
+        "iconPath": "images/nav/find-off.png",
+        "selectedIconPath": "images/nav/find-on.png",
+        "text": "所热爱的"
+      },
+      {
+        "pagePath": "pages/github/github",
+        "iconPath": "images/nav/home-off.png",
+        "selectedIconPath": "images/nav/home-on.png",
+        "text": "所热爱的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

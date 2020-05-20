@@ -1,0 +1,18 @@
+
+
+<swiper class="home-warp" circular="true" duration='300' next-margin="40rpx" previous-margin="40rpx">
+  <block wx:for="{{array}}" wx:key="{{index}}"> 
+    <swiper-item class="home-item">
+        <navigator class="article-warp"  url='#'>
+            <image class="main-img" mode='aspectFill' src='{{item.url}}' ></image>
+            <view class="article-info">
+                <view class="title-warp">
+                    <text class="classify"></text>
+                    <text class="title">{{item.title}}</text>
+                    <text class="description">{{item.keywords}}</text>
+                </view>
+            </view>
+        </navigator>
+    </swiper-item>
+  </block>   
+</swiper>
