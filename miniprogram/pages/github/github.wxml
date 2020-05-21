@@ -2,6 +2,8 @@
 <view class="move">
 <image class="pic" src="../../images/4.jpg" mode='aspectFit'></image>
 <text>本项目github</text>
-<text>123</text>
+<text>https://github.com/</text>
+<text>zZ675079530/</text>
+<text>self-IntroductionZZY</text>
 </view>
 <button class="copy" bindtap="copy">复制</button>

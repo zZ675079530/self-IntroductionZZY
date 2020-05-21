@@ -2,6 +2,7 @@
   display: inline-block;
   animation: move 16s linear infinite;
   text-align: center;
+  width: 40vw;
 }
 .move text{
   display: block;
@@ -16,6 +17,7 @@
 .pic{
   width: 40vw;
   display: block;
+  margin: 0 auto;
 }
 @keyframes move{
   0% { transform: translate3d(0,0,0);}

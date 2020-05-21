@@ -1,12 +1,13 @@
-# 云开发 quickstart
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
+----
+#### 1
+cloudfunctions 这个文件夹 云开发的 没用到
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
+就是一个小程序 小demo
 
-## 参考文档
+----
+#### 2
+ui库 用到了 [colorui](https://github.com/zZ675079530/ColorUI) 和 [vant](https://youzan.github.io/vant-weapp/#/intro)
 
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
+colorui 用到了全屏抽屉 但引用有问题 所以粘贴到了页面.wxss
 

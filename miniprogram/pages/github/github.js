@@ -6,7 +6,7 @@ Page({
    */
   copy(e){
     wx.setClipboardData({
-      data: "12",
+      data: "https://github.com/zZ675079530/self-IntroductionZZY",
       success(res){
         title:"复制成功"
         icon:"success"
